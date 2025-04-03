@@ -6,6 +6,7 @@
     --darker-orange: #FF8C00;
     --dark-red: #8B0000;
     --deep-purple: #4B0082;
+    --vibrant-green: #00FF00;
 }
 
 * {
@@ -267,20 +268,26 @@ button:disabled {
     box-shadow: 0 0 20px var(--vibrant-orange);
 }
 
-.card-image {
-    height: 100px;
-    background-color: var(--darker-gray);
-    border-radius: 5px;
-    margin-bottom: 0.5rem;
-    overflow: hidden;
+.card .card-image {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 60px;
 }
 
-.card-image img {
-    max-width: 100%;
-    max-height: 100%;
+.card .card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+.card .card-initial {
+    position: absolute;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--vibrant-orange);
+    text-shadow: 1px 1px 2px black;
 }
 
 .card-title {
@@ -376,6 +383,83 @@ button:disabled {
     color: gold;
 }
 
+/* Highlighted card that matches current question stem */
+.card.matching-stem {
+    border: 3px solid var(--vibrant-green);
+    box-shadow: 0 0 15px var(--vibrant-green);
+    transform: translateY(-5px);
+}
+
+/* Genre-specific styling */
+.card.genre-time {
+    background: linear-gradient(145deg, #2c3e50, #4a5568);
+}
+
+.card.genre-direction {
+    background: linear-gradient(145deg, #1a365d, #2c5282);
+}
+
+.card.genre-quantity {
+    background: linear-gradient(145deg, #44337a, #553c9a);
+}
+
+.card.genre-negation {
+    background: linear-gradient(145deg, #702459, #97266d);
+}
+
+.card.genre-unity {
+    background: linear-gradient(145deg, #285e61, #2c7a7b);
+}
+
+.card.genre-element {
+    background: linear-gradient(145deg, #2b6cb0, #3182ce);
+}
+
+.card.genre-action {
+    background: linear-gradient(145deg, #c05621, #dd6b20);
+}
+
+.card.genre-knowledge {
+    background: linear-gradient(145deg, #744210, #975a16);
+}
+
+.card.genre-life {
+    background: linear-gradient(145deg, #276749, #2f855a);
+}
+
+.card.genre-magical {
+    background: linear-gradient(145deg, #6b46c1, #805ad5);
+}
+
+/* Super card styles for each genre */
+.card.super-card.genre-time,
+.card.super-card.genre-direction,
+.card.super-card.genre-quantity,
+.card.super-card.genre-negation,
+.card.super-card.genre-unity,
+.card.super-card.genre-element,
+.card.super-card.genre-action,
+.card.super-card.genre-knowledge,
+.card.super-card.genre-life,
+.card.super-card.genre-magical {
+    background-size: 400% 400%;
+    animation: gradient-shift 3s ease infinite;
+    border: 2px solid gold;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.7);
+}
+
+@keyframes gradient-shift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     h1 {
@@ -450,4 +534,41 @@ button:disabled {
 .mute-icon {
     display: inline-block;
     line-height: 1;
+}
+
+/* Question hint */
+#question-hint {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: var(--light-text);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 8px;
+    border-radius: 5px;
+    border-left: 3px solid var(--vibrant-green);
+}
+
+/* Start screen instructions */
+.instructions {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 15px 25px;
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: left;
+}
+
+.instructions h3 {
+    color: var(--vibrant-orange);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.instructions ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.instructions li {
+    margin-bottom: 8px;
+    line-height: 1.4;
 }

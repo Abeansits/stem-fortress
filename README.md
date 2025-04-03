@@ -59,6 +59,82 @@ The game relies on a JSON file to store word stems, their meanings, example word
 
 ---
 
+## Card Genres and Art Direction
+
+Cards are categorized into genres based on their stem meanings, each with distinct visual styles and gameplay characteristics:
+
+### 1. Time Genre
+- **Description**: Cards related to temporal concepts like "before," "after," and "again." Represent sequence and chronology.
+- **Stems Example**: "ante" (before), "post" (after), "re" (again)
+- **Visual Style**: Dark blue tones with hourglass motifs and celestial time streams
+- **Icon**: ⏱️
+- **Image Prompt**: A mystical hourglass guardian with flowing temporal energy, dark blue robes with glowing clock symbols, and cosmic time streams circling around them. Fantasy art style with a dark celestial background featuring constellation patterns resembling clocks.
+
+### 2. Direction Genre
+- **Description**: Cards representing spatial orientation such as "around," "between," "within," etc.
+- **Stems Example**: "circum" (around), "inter" (between), "intra" (within)
+- **Visual Style**: Navy blues with compass elements and navigational symbols
+- **Icon**: 🧭
+- **Image Prompt**: A compass navigator guardian with directional arrows emanating from their body, holding a glowing magical map. Wearing a navy explorer outfit with golden directional symbols, standing at a crossroads with paths extending in multiple directions. Fantasy art style with misty mountain backgrounds.
+
+### 3. Quantity Genre
+- **Description**: Cards dealing with numbers and amounts: "two," "three," "five," etc.
+- **Stems Example**: "bi" (two), "tri" (three), "cent" (one hundred)
+- **Visual Style**: Purple tones with mathematical symbols and geometric patterns
+- **Icon**: 🔢
+- **Image Prompt**: A mathematical wizard guardian surrounded by floating number runes and geometric shapes. Purple robes inscribed with numerical sequences, wielding a staff topped with a crystal dodecahedron. Fantasy art style with a backdrop of an infinite grid extending into the distance.
+
+### 4. Negation Genre
+- **Description**: Cards expressing opposition or removal: "not," "against," "away."
+- **Stems Example**: "un" (not), "anti" (against), "dis" (away)
+- **Visual Style**: Magenta and black with barrier/shield elements and cancellation symbols
+- **Icon**: ❌
+- **Image Prompt**: A shadow guardian with barrier-creating abilities, manifesting protective dark energy shields. Deep magenta and black armor with cancellation symbols, capable of nullifying incoming attacks. Fantasy art style with a realm of opposing forces colliding in the background.
+
+### 5. Unity Genre
+- **Description**: Cards representing connection and sameness: "together," "same," "self."
+- **Stems Example**: "syn" (together), "homo" (same), "auto" (self)
+- **Visual Style**: Teal tones showing interconnected forms and harmony motifs
+- **Icon**: 🤝
+- **Image Prompt**: A harmony guardian with interconnected energy bonds linking multiple ethereal forms into one being. Teal and silver garments with unity symbols, hands positioned in a connecting gesture. Fantasy art style with a serene backdrop showing separate elements joining together.
+
+### 6. Element Genre
+- **Description**: Cards related to fundamental aspects of nature: "water," "light," "color," etc.
+- **Stems Example**: "hydro" (water), "photo" (light), "chrome" (color)
+- **Visual Style**: Blue crystalline forms with elemental energy and natural phenomena
+- **Icon**: 🌊
+- **Image Prompt**: A primal elemental guardian commanding water, light, and natural forces. Blue crystalline armor with flowing liquid components and light-refracting prisms. Fantasy art style with a dynamic background showing elemental energy convergence.
+
+### 7. Action Genre
+- **Description**: Cards depicting dynamic activities: "look," "write," "say," "hear," etc.
+- **Stems Example**: "spec" (look), "scribe" (write), "dict" (say)
+- **Visual Style**: Orange and gold with movement trails and energetic visual elements
+- **Icon**: ⚡
+- **Image Prompt**: A dynamic warrior guardian mid-leap with energy trails following their movement. Orange and gold battle gear designed for speed and agility, wielding dual energy blades. Fantasy art style with a background showing motion blur and impact effects.
+
+### 8. Knowledge Genre
+- **Description**: Cards representing learning and wisdom: "science," "believe," "book."
+- **Stems Example**: "logy" (science), "cred" (believe), "biblio" (book)
+- **Visual Style**: Brown and gold featuring scrolls, tomes, and scholarly symbols
+- **Icon**: 📚
+- **Image Prompt**: A scholarly guardian surrounded by floating ancient scrolls and illuminated tomes. Brown and gold robes with wisdom symbols and a headpiece representing expanded consciousness. Fantasy art style with a vast magical library backdrop featuring glowing bookshelves.
+
+### 9. Life Genre
+- **Description**: Cards related to biological existence: "life," "man," "inflammation," etc.
+- **Stems Example**: "bio" (life), "anthropo" (man), "itis" (inflammation)
+- **Visual Style**: Green and brown with organic growth patterns and nature designs
+- **Icon**: 🌱
+- **Image Prompt**: A nature guardian with blooming flora growing from their form and small creatures dwelling in their living armor. Green and brown organic components with healing energy emanating from their hands. Fantasy art style with a vibrant forest background showing cycles of life.
+
+### 10. Magical Genre
+- **Description**: The default category for any stem meaning that doesn't fit elsewhere.
+- **Stems Example**: Various uncommon stems
+- **Visual Style**: Purple and silver with arcane symbols and mystical energy patterns
+- **Icon**: ✨
+- **Image Prompt**: A mystic arcane guardian radiating multicolored spell energy and surrounded by arcane symbols. Purple and silver robes with constellation patterns and enchanted gemstones. Fantasy art style with a cosmic void background filled with magical phenomena.
+
+---
+
 ## Gameplay Flow
 
 ### Setup

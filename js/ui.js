@@ -191,6 +191,27 @@ class UIManager {
         
         // Show the question container
         this.containers.question.classList.remove('hidden');
+        
+        // Highlight cards that match the question stem
+        this.highlightMatchingCards(attackCard.stem);
+    }
+    
+    // Highlight cards that match the current question's stem
+    highlightMatchingCards(questionStem) {
+        // Get all cards in the player's hand
+        const cardElements = document.querySelectorAll('#player-hand .card');
+        
+        // Reset all card highlights
+        cardElements.forEach(card => {
+            card.classList.remove('matching-stem');
+        });
+        
+        // Highlight cards with matching stem
+        cardElements.forEach(card => {
+            if (card.dataset.stem === questionStem) {
+                card.classList.add('matching-stem');
+            }
+        });
     }
     
     // Handle answer option click

@@ -1,5 +1,80 @@
 // card.js - Handles card creation and functionality
 
+// Define card genres based on stem meanings
+const cardGenres = {
+    // Time-related
+    "before": "time",
+    "after": "time",
+    "again": "time",
+    
+    // Direction/Position
+    "around": "direction",
+    "between": "direction",
+    "within": "direction",
+    "into": "direction",
+    "under": "direction",
+    "over": "direction",
+    "across": "direction",
+    "center": "direction",
+    "out": "direction",
+    "down": "direction",
+    "to": "direction",
+    
+    // Quantity
+    "two": "quantity",
+    "three": "quantity",
+    "five": "quantity", 
+    "one hundred": "quantity",
+    "half": "quantity",
+    "many": "quantity",
+    "all": "quantity",
+    "equal": "quantity",
+    
+    // Negation
+    "not": "negation",
+    "against": "negation",
+    "away": "negation",
+    
+    // Unity
+    "together": "unity",
+    "same": "unity",
+    "self": "unity",
+    
+    // Elements
+    "water": "element",
+    "light": "element",
+    "color": "element",
+    "small": "element",
+    
+    // Action
+    "look": "action",
+    "write": "action",
+    "say": "action",
+    "hear": "action",
+    "carry": "action",
+    "cut": "action",
+    "lead": "action",
+    "send": "action",
+    "kill": "action",
+    "take": "action",
+    "hang": "action",
+    
+    // Knowledge
+    "science": "knowledge",
+    "believe": "knowledge",
+    "book": "knowledge",
+    
+    // Life
+    "life": "life",
+    "man": "life",
+    "inflammation": "life",
+    "specialist": "life",
+    "government": "life",
+    
+    // Default for any other meaning
+    "default": "magical"
+};
+
 class Card {
     constructor(data) {
         this.stem = data.stem;
@@ -9,23 +84,49 @@ class Card {
         this.powerLevel = data.powerLevel || 1;
         this.isSuper = data.isSuper || false;
         this.element = null;
+        
+        // Determine genre based on meaning
+        this.genre = this.determineGenre();
+    }
+    
+    // Determine the card's genre based on its meaning
+    determineGenre() {
+        return cardGenres[this.meaning] || cardGenres["default"];
+    }
+    
+    // Get the appropriate icon for the card's genre
+    getGenreIcon() {
+        const icons = {
+            "time": "⏱️",
+            "direction": "🧭",
+            "quantity": "🔢",
+            "negation": "❌",
+            "unity": "🤝",
+            "element": "🌊",
+            "action": "⚡",
+            "knowledge": "📚",
+            "life": "🌱",
+            "magical": "✨"
+        };
+        
+        return icons[this.genre] || "✨";
     }
     
     // Create the DOM element for the card
     createCardElement() {
         const cardElement = document.createElement('div');
-        cardElement.className = `card ${this.isSuper ? 'super-card' : ''}`;
+        cardElement.className = `card ${this.isSuper ? 'super-card' : ''} genre-${this.genre}`;
         cardElement.dataset.stem = this.stem;
         
         // Card content structure
         cardElement.innerHTML = `
             <div class="card-image">
-                <!-- Placeholder for card image -->
-                <div style="font-size: 2rem; color: var(--vibrant-orange);">${this.stem.charAt(0).toUpperCase()}</div>
+                <div class="card-icon">${this.getGenreIcon()}</div>
+                <div class="card-initial">${this.stem.charAt(0).toUpperCase()}</div>
             </div>
-            <div class="card-title">${this.stem} Guardian</div>
+            <div class="card-title">${this.stem.charAt(0).toUpperCase() + this.stem.slice(1)} Guardian</div>
             <div class="card-meaning">Meaning: ${this.meaning}</div>
-            <div class="card-example">Example: ${this.example}</div>
+            <div class="card-example">Example: ${this.example || this.stem + "ology"}</div>
             <div class="card-power">${this.powerLevel}</div>
         `;
         
@@ -66,6 +167,8 @@ class Card {
             console.error('Cannot merge cards with different stems');
             return null;
         }
+        
+        console.log(`Merging cards with stem "${this.stem}"`);
         
         // Create a new Super card
         const superCard = new Card({

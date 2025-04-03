@@ -228,6 +228,9 @@ class GameController {
         
         // Update merge button state
         uiManager.updateMergeButton(gameState.mergeablePairs.length > 0);
+        
+        // For debugging
+        console.log("Mergeable pairs:", gameState.mergeablePairs.length, gameState.mergeablePairs);
     }
     
     // Merge selected cards
@@ -236,6 +239,8 @@ class GameController {
             uiManager.showFeedback('No cards available to merge', false);
             return;
         }
+        
+        console.log("Attempting to merge cards...");
         
         // For simplicity, just merge the first available pair
         const [card1, card2] = gameState.mergeablePairs[0];
@@ -248,6 +253,8 @@ class GameController {
             console.error('Cards not found in hand');
             return;
         }
+        
+        console.log(`Merging cards at indices ${card1Index} and ${card2Index}`);
         
         // Play merge sound effect
         this.soundEffects.merge.play();

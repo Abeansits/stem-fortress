@@ -101,6 +101,10 @@ class Player {
             .filter(cards => cards.length >= 2)
             .map(cards => [cards[0], cards[1]]);
         
+        // Log for debugging
+        console.log("Hand stems:", Object.keys(stemCounts).map(stem => `${stem}: ${stemCounts[stem].length}`));
+        console.log("Mergeable pairs found:", mergeablePairs.length);
+        
         return mergeablePairs;
     }
     

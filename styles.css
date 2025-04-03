@@ -1,0 +1,453 @@
+/* Global Styles */
+:root {
+    --dark-gray: #333333;
+    --darker-gray: #1E1E1E;
+    --vibrant-orange: #FFA500;
+    --darker-orange: #FF8C00;
+    --dark-red: #8B0000;
+    --deep-purple: #4B0082;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--darker-gray);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Using gradient as placeholder for background image */
+    background: linear-gradient(to bottom, var(--darker-gray), #000000);
+    overflow: hidden;
+}
+
+#game-container {
+    width: 100%;
+    max-width: 1200px;
+    height: 90vh;
+    position: relative;
+}
+
+.screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    transition: opacity 0.5s;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Typography */
+h1, h2, h3 {
+    font-family: 'Cinzel', serif;
+    color: var(--vibrant-orange);
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 3.5rem;
+    text-shadow: 0 0 10px var(--darker-orange);
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+p {
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Buttons */
+button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: var(--dark-gray);
+    color: var(--vibrant-orange);
+    border: 2px solid var(--vibrant-orange);
+    border-radius: 8px;
+    padding: 0.8rem 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    outline: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover, button:focus {
+    background-color: var(--darker-gray);
+    box-shadow: 0 0 15px var(--vibrant-orange);
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+/* Start Screen */
+#start-screen {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#start-button {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+}
+
+/* Game Screen */
+#game-screen {
+    justify-content: flex-start;
+    padding-top: 1rem;
+}
+
+#battlefield {
+    width: 100%;
+    height: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Boss and Player Containers */
+#boss-container, #player-container {
+    width: 100%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#boss-model, #player-model {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/* Health Bars */
+#boss-health-bar-container, #player-health-bar-container {
+    width: 80%;
+    margin-bottom: 1rem;
+}
+
+#boss-health-label, #player-health-label {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+#boss-health-bar, #player-health-bar {
+    height: 20px;
+    width: 100%;
+    background-color: var(--dark-gray);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    --health-percentage: 100%;
+}
+
+#boss-health-bar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--health-percentage);
+    height: 100%;
+    background-color: var(--dark-red);
+    border-radius: 10px;
+    transition: width 0.5s;
+}
+
+#player-health-bar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--health-percentage);
+    height: 100%;
+    background-color: var(--vibrant-orange);
+    border-radius: 10px;
+    transition: width 0.5s;
+}
+
+/* Question Container */
+#question-container {
+    background-color: rgba(30, 30, 30, 0.9);
+    border: 2px solid var(--vibrant-orange);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin: 1rem auto;
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+}
+
+#answer-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.answer-option {
+    padding: 1rem;
+    background-color: var(--dark-gray);
+    border: 1px solid var(--vibrant-orange);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.answer-option:hover {
+    background-color: var(--darker-gray);
+    box-shadow: 0 0 8px var(--vibrant-orange);
+}
+
+.answer-option.selected {
+    background-color: var(--darker-orange);
+    color: white;
+}
+
+/* Player Hand */
+#player-hand {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 1rem;
+    overflow-x: auto;
+    perspective: 1000px;
+}
+
+.card {
+    width: 150px;
+    height: 210px;
+    background-color: var(--dark-gray);
+    border: 2px solid var(--vibrant-orange);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.card:hover {
+    transform: translateY(-10px) rotateY(5deg);
+    box-shadow: 0 0 15px var(--vibrant-orange);
+}
+
+.card.selected {
+    transform: translateY(-15px);
+    box-shadow: 0 0 20px var(--vibrant-orange);
+}
+
+.card-image {
+    height: 100px;
+    background-color: var(--darker-gray);
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-image img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.card-title {
+    font-family: 'Cinzel', serif;
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+    color: var(--vibrant-orange);
+}
+
+.card-meaning {
+    font-size: 0.8rem;
+    margin-bottom: 0.3rem;
+}
+
+.card-example {
+    font-size: 0.8rem;
+    font-style: italic;
+    margin-bottom: 0.3rem;
+}
+
+.card-power {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 25px;
+    height: 25px;
+    background-color: var(--vibrant-orange);
+    color: var(--darker-gray);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+/* Game Controls */
+#game-controls {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.game-button {
+    padding: 0.8rem 1.5rem;
+}
+
+/* Result Screen */
+#result-screen {
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 10;
+}
+
+#play-again-button {
+    margin-top: 2rem;
+}
+
+/* Feedback Message */
+#feedback-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid var(--vibrant-orange);
+    border-radius: 10px;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    z-index: 100;
+    text-align: center;
+}
+
+/* Feedback types */
+.feedback.positive {
+    border-color: var(--vibrant-orange);
+    color: var(--vibrant-orange);
+}
+
+.feedback.negative {
+    border-color: var(--dark-red);
+    color: var(--dark-red);
+}
+
+/* Super Card */
+.super-card {
+    border: 3px solid gold;
+    background-color: rgba(70, 50, 30, 0.9);
+}
+
+.super-card .card-title::before {
+    content: "Super ";
+    color: gold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 1.8rem;
+    }
+    
+    #answer-options {
+        grid-template-columns: 1fr;
+    }
+    
+    .card {
+        width: 120px;
+        height: 170px;
+    }
+    
+    .card-image {
+        height: 70px;
+    }
+}
+
+/* Card Counts */
+#card-counts {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+#deck-count, #discard-count {
+    padding: 0.3rem 0.8rem;
+    background-color: var(--dark-gray);
+    border-radius: 5px;
+    border: 1px solid var(--vibrant-orange);
+}
+
+#deck-count-value, #discard-count-value {
+    font-weight: bold;
+    color: var(--vibrant-orange);
+}
+
+/* Music Control */
+#music-control {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.mute-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 0;
+    background-color: rgba(51, 51, 51, 0.8);
+    transition: all 0.3s ease;
+}
+
+.mute-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px var(--vibrant-orange);
+}
+
+.mute-icon {
+    display: inline-block;
+    line-height: 1;
+}

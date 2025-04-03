@@ -1,0 +1,602 @@
+[
+  {
+    "stem": "ante",
+    "meaning": "before",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "anti",
+    "meaning": "against",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "bi",
+    "meaning": "two",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "circum",
+    "meaning": "around",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "com",
+    "meaning": "together",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "con",
+    "meaning": "together",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "de",
+    "meaning": "down",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "dis",
+    "meaning": "away",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "equi",
+    "meaning": "equal",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "extra",
+    "meaning": "beyond",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "inter",
+    "meaning": "between",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "intra",
+    "meaning": "within",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "intro",
+    "meaning": "into",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "mal",
+    "meaning": "bad",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "mis",
+    "meaning": "bad",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "non",
+    "meaning": "not",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "post",
+    "meaning": "after",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "pre",
+    "meaning": "before",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "semi",
+    "meaning": "half",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "sub",
+    "meaning": "under",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "super",
+    "meaning": "over",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "syn",
+    "meaning": "together",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "sym",
+    "meaning": "together",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "tri",
+    "meaning": "three",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "un",
+    "meaning": "not",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "archy",
+    "meaning": "government",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "chrome",
+    "meaning": "color",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "cide",
+    "meaning": "kill",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "ician",
+    "meaning": "specialist",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "itis",
+    "meaning": "inflammation",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "aqua",
+    "meaning": "water",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "audi",
+    "meaning": "hear",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "bell",
+    "meaning": "war",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "cap",
+    "meaning": "take",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "cise",
+    "meaning": "cut",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "bio",
+    "meaning": "life",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "auto",
+    "meaning": "self",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "port",
+    "meaning": "carry",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "scribe",
+    "meaning": "write",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "logy",
+    "meaning": "science",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "dict",
+    "meaning": "say",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "cred",
+    "meaning": "believe",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "cent",
+    "meaning": "one hundred",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "neo",
+    "meaning": "new",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "ad",
+    "meaning": "to",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "dia",
+    "meaning": "across",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "miss",
+    "meaning": "send",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "centri",
+    "meaning": "center",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "biblio",
+    "meaning": "book",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "anthropo",
+    "meaning": "man",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "homo",
+    "meaning": "same",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "spec",
+    "meaning": "look",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "duc",
+    "meaning": "lead",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "fer",
+    "meaning": "carry",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "pend",
+    "meaning": "hang",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "micro",
+    "meaning": "small",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "hydro",
+    "meaning": "water",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "photo",
+    "meaning": "light",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "pan",
+    "meaning": "all",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "penta",
+    "meaning": "five",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "tele",
+    "meaning": "far",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "vid",
+    "meaning": "look",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "omni",
+    "meaning": "all",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "ex",
+    "meaning": "out",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "poly",
+    "meaning": "many",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "re",
+    "meaning": "again",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "hypo",
+    "meaning": "under",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "pseudo",
+    "meaning": "false",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "neuro",
+    "meaning": "nerve",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "tomy",
+    "meaning": "cut",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "hema",
+    "meaning": "blood",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "proto",
+    "meaning": "first",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "phon",
+    "meaning": "sound",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "mono",
+    "meaning": "one",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "viv",
+    "meaning": "life",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "morph",
+    "meaning": "shape",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "vest",
+    "meaning": "clothes",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "bene",
+    "meaning": "good",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "pond",
+    "meaning": "weight",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "corp",
+    "meaning": "body",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "dorm",
+    "meaning": "sleep",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "pater",
+    "meaning": "father",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "nov",
+    "meaning": "new",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "punct",
+    "meaning": "point",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "ject",
+    "meaning": "throw",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "tion",
+    "meaning": "act or state",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "loco",
+    "meaning": "place",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "dox",
+    "meaning": "opinion",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "amphi",
+    "meaning": "both",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "magn",
+    "meaning": "great",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "eu",
+    "meaning": "good",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "endo",
+    "meaning": "within",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "phobia",
+    "meaning": "fear",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "ortho",
+    "meaning": "straight",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "put",
+    "meaning": "think",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "ver",
+    "meaning": "true",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "matri",
+    "meaning": "mother",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "mega",
+    "meaning": "large",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "pop",
+    "meaning": "people",
+    "example": "",
+    "exampleMeaning": ""
+  },
+  {
+    "stem": "sangui",
+    "meaning": "blood",
+    "example": "",
+    "exampleMeaning": ""
+  }
+]
